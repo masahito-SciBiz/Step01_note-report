@@ -7,3 +7,5 @@ note-report.tex
 report.pdf
 Step01_note-report.Rproj
 note-report.log
+renv/
+note-report_files/
