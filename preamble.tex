@@ -1,0 +1,22 @@
+% 日本語フォントと余白を設定する preamble
+
+% 余白を指定（A4、上下左右1インチ）
+\usepackage[a4paper,margin=1in]{geometry}
+
+% 日本語フォントの設定（Yu Gothic を指定）
+\usepackage{fontspec}
+\setmainfont{YuGothic} % macOSの場合（Windowsなら Yu Gothic、LinuxならNoto Sans CJKなど）
+
+% 表の位置指定や浮動を制御するパッケージ
+\usepackage{float}
+
+% 日本語でPDF内の目次や章タイトルが文字化けしないように
+\usepackage{hyperref}
+\hypersetup{
+  unicode=true,
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  pdftitle={R Markdown Report},
+  pdfauthor={Your Name}
+}
